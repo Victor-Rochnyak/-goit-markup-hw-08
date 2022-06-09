@@ -1,10 +1,27 @@
 body {
   color: #212121;
   font-size: 14px;
-  font-family: "Roboto";
+  font-family: 'Roboto';
 }
 
 .section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  
+@include mq(desctop){
   padding-top: 94px;
   padding-bottom: 94px;
+}
+}
+
+// сетка для элементов
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+
+.grid__item {
+  flex-basis: calc((100% - var(--indent) * (var(--items)-1))/var(--items));
 }

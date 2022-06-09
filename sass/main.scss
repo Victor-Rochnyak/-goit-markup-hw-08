@@ -1,6 +1,7 @@
 // utils переменные var
 @import "./utils/vars" ;
 @import "./utils/visually-hidden";
+@import "./utils/mixin";
 
 
 
@@ -14,6 +15,7 @@
 @import"./components/button";
 @import"./components/form";
 @import"./components/social-icons";
+@import "./components/mobile-menu";
 
 // layouts секции сайта
 @import"./layout/header-section";

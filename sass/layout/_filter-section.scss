@@ -21,18 +21,21 @@
 }
 
 .projects__item {
-    margin-right: 30px;
-    margin-bottom: 30px;
-    cursor: pointer;
-
-    &:nth-child(3n) {
-        margin-right: 0;
-    }
-
-    &:nth-child(n + 7) {
-        margin-bottom: 0;
-    }
+    --items:3;
 }
+// .projects__item {
+//     margin-right: 30px;
+//     margin-bottom: 30px;
+//     cursor: pointer;
+
+//     &:nth-child(3n) {
+//         margin-right: 0;
+//     }
+
+//     &:nth-child(n + 7) {
+//         margin-bottom: 0;
+//     }
+// }
 
 .projects__link {
     display: block;
