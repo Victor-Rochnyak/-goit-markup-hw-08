@@ -1,0 +1,28 @@
+// utils переменные var
+@import "./utils/vars" ;
+@import "./utils/visually-hidden";
+
+
+
+// base stile базовые настройки и сбросы
+@import "./base/common";
+@import "./base/reset";
+@import "./base/container";
+
+
+// components компоненты которые можно перезаписать
+@import"./components/button";
+@import"./components/form";
+@import"./components/social-icons";
+
+// layouts секции сайта
+@import"./layout/header-section";
+@import"./layout/hero-section";
+@import"./layout/specifics-section";
+@import"./layout/development-section";
+@import"./layout/team-section";
+@import"./layout/client-customers-section";
+@import"./layout/footer-section";
+@import"./layout/filter-section";
+
+

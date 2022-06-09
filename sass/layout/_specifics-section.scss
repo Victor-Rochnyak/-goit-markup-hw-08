@@ -1,0 +1,62 @@
+/*#region SPECIFICS SECTION*/
+.specifics-section {
+  padding-bottom: 0;
+
+  .specifics-list {
+    display: flex;
+  }
+}
+
+.specifics-list__item {
+  margin-right: 30px;
+  width: 270px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+/* раздел с особеностями */
+.specifics-list__item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.specifics-list--icon-antena::before {
+  background-image: url(../images/icons/antenna.svg);
+}
+
+.specifics-list--icon-clock::before {
+  background-image: url(../images/icons/clock.svg);
+}
+
+.specifics-list--icon-diagrama::before {
+  background-image: url(../images/icons/diagram.svg);
+}
+
+.specifics-list--icon-astronaut::before {
+  background-image: url(../images/icons/astronaut.svg);
+}
+
+.specifics-list__title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.specifics-list__text {
+  color: #757575;
+
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/*#endregion SPECIFICS SECTION*/
