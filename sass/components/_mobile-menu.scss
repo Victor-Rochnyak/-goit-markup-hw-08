@@ -5,6 +5,7 @@
   overflow: auto;
   background-color: #ffffff;
 
+ 
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -29,10 +30,10 @@
 }
 
 .mobile-nav {
+
   padding-top: 48px;
   padding-left: 40px;
-  margin-bottom: 300px;
-
+  margin-bottom: 302px;
   &__item {
     margin-bottom: 32px;
   }
@@ -58,6 +59,7 @@
   margin-bottom: 64px;
 
   &__list {
+   
     margin-bottom: 32px;
   }
 
@@ -68,6 +70,7 @@
     font-size: 34px;
     line-height: 40px;
     letter-spacing: 0.02em;
+    text-decoration: none;
   
     color: #2196f3;
   }
@@ -79,23 +82,22 @@
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 0.02em;
+    text-decoration: none;  
   
     color: #757575;
   }
 }
 
 .mobile-social {
-  padding-right: 83px;
-  padding-bottom: 48px;
-  padding-left: 40px;
 
   &__item {
     display: flex;
     flex-wrap: nowrap;
+    justify-content: center;
   }
 
   &__list:not(:last-child)::after {
-    content: '';
+    content: ''; 
     margin-right: 10px;
   }
 
@@ -111,7 +113,7 @@
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: 0.02em;
-  
+  text-decoration: none;
     color: #2196f3;
   }
 }
