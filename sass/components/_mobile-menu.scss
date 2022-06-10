@@ -4,22 +4,14 @@
   left: 0px;
   overflow: auto;
   background-color: #ffffff;
- 
+
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  width: 100%;
+  height: 100%;
 
- 
-  @media screen and(min-width:320px) and(max-width:767px) {
-    width: 100%;
-    height: 100%;
-  }
-  
-}
-
-
-
-.mobile-menu__close {
+  &__close {
     position: absolute;
     top: 10px;
     right: 15px;
@@ -29,36 +21,99 @@
     padding: 0px;
   }
 
-.mobile-menu.is-hidden{
+  &.is-hidden {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+  }
 }
 
 .mobile-nav {
-padding-top: 48px;
-padding-left: 40px;
-margin-bottom: 300px;
+  padding-top: 48px;
+  padding-left: 40px;
+  margin-bottom: 300px;
 
+  &__item {
+    margin-bottom: 32px;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    color: #212121;
+    text-decoration: none;
+  }
 }
-
-.mobile-nav__item {
-  margin-bottom: 32px;
-}
-
-.mobile-nav__link {
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-
-  color: #212121;
-  text-decoration: none;
-}
-
 .mobile-button__burger {
   border: none;
   background-color: transparent;
   line-height: 0;
   padding: 0px;
 }
+.mobile-auth {
+  padding-left: 40px;
+  margin-bottom: 64px;
+
+  &__list {
+    margin-bottom: 32px;
+  }
+
+  &__tel {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+  
+    color: #2196f3;
+  }
+  
+  &__mail {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+  
+    color: #757575;
+  }
+}
+
+.mobile-social {
+  padding-right: 83px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+
+  &__item {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  &__list:not(:last-child)::after {
+    content: '';
+    margin-right: 10px;
+  }
+
+  &__list:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    margin-right: 10px;
+  }
+
+  &__link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+  
+    color: #2196f3;
+  }
+}
+
+
