@@ -1,7 +1,7 @@
 /*#region HEADER SECTION*/
 .header-section {
   border-bottom: 1px solid #ececec;
-  @media screen and (min-width: 320px) and(max-width:768px) {
+  @media screen and(max-width:768px) {
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -11,7 +11,7 @@
     padding-bottom: 21px;
   }
 
-  @media screen and (min-width: 1200) {
+  @media screen and (min-width: 1200px) {
     padding-top: 24px;
     padding-bottom: 24px;
   }
@@ -22,7 +22,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   position: relative;
 }
 
@@ -45,63 +44,71 @@
 
 /* навигация */
 
-.nav {
-  display: none;
-}
-.nav__list {
-  display: flex;
-  align-items: center;
-
-  .nav__item {
-    margin-right: 50px;
-
-    &:last-child {
-      margin-right: 0px;
-    }
+  
+// 0px - 767px
+@media screen and(max-width:767px) {
+  .nav__list{
+    display: none;
+  }
+  .auth__list{
+    display: none;
   }
 }
 
-.nav__link {
-  color: var(--main-color);
+// .nav__list {
+//   display: flex;
+//   align-items: center;
+// }
 
-  display: block;
-  // padding-top: 32px;
-  // padding-bottom: 32px;
+//   .nav__item {
+//     margin-right: 50px;
 
-  font-family: var(--main-font);
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  position: relative;
+//     &:last-child {
+//       margin-right: 0px;
+//     }
+//   }
 
-  transition: color var(--duration) var(--timing-function);
 
-  &:hover,
-  &:focus {
-    color: var(--selectoin-color);
-  }
+// .nav__link {
+//   color: var(--main-color);
 
-  &.current::after {
-    position: absolute;
-    bottom: -1px;
-    right: 0;
-    content: '';
-    width: 100%;
-    height: 4px;
-    background-color: #2196f3;
-    border-radius: 2px;
-  }
-}
-.studia,
-.portfolio {
-  color: #2196f3;
-}
+//   display: block;
+//   // padding-top: 32px;
+//   // padding-bottom: 32px;
+
+//   font-family: var(--main-font);
+//   font-weight: 500;
+//   line-height: 1.14;
+//   letter-spacing: 0.02em;
+//   text-decoration: none;
+//   position: relative;
+
+//   transition: color var(--duration) var(--timing-function);
+
+//   &:hover,
+//   &:focus {
+//     color: var(--selectoin-color);
+//   }
+
+//   &.current::after {
+//     position: absolute;
+//     bottom: -1px;
+//     right: 0;
+//     content: '';
+//     width: 100%;
+//     height: 4px;
+//     background-color: #2196f3;
+//     border-radius: 2px;
+//   }
+// }
+// .studia,
+// .portfolio {
+//   color: #2196f3;
+// }
 
 /* почта,телефон */
 
 .auth__list {
-  display: none;
   // display: flex;
   // margin-left: auto;
 
