@@ -1,5 +1,5 @@
 
-
+@media screen and(max-width:767px){
 .mobile-menu {
   padding: 48px 40px;
   position: absolute;
@@ -117,9 +117,13 @@
     color: #2196f3;
   }
 }
+}
 
 @media screen and(min-width:767px) {
   .mobile-button__burger{
+    display: none;
+  }
+  .mobile-menu{
     display: none;
   }
 }
