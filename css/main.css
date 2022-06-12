@@ -73,8 +73,8 @@ img {
 }
 
 .conteiner {
-  padding-left: 15px;
   padding-right: 15px;
+  padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -713,19 +713,6 @@ img {
 }
 
 /* логотип */
-.header__conteiner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: relative;
-}
-
 .logo {
   color: var(--selectoin-color);
   text-decoration: none;
@@ -740,6 +727,27 @@ img {
   color: #000000;
 }
 
+@media screen and (min-width: 320px) {
+  .header__conteiner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .logo {
+    margin-right: 88px;
+  }
+}
+
 /* навигация */
 @media screen and (max-width: 767px) {
   .nav__list {
@@ -750,44 +758,118 @@ img {
   }
 }
 
-/* почта,телефон */
-.auth__list .auth__item {
-  margin-right: 50px;
+@media screen and (min-width: 767px) {
+  .nav {
+    margin-right: auto;
+  }
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .nav__link {
+    color: var(--main-color);
+    display: block;
+    font-family: var(--main-font);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    position: relative;
+    -webkit-transition: color var(--duration) var(--timing-function);
+    transition: color var(--duration) var(--timing-function);
+  }
+  .nav__link:hover, .nav__link:focus {
+    color: var(--selectoin-color);
+  }
+  .nav__link.current::after {
+    position: absolute;
+    bottom: -35px;
+    right: 0;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: #2196f3;
+    border-radius: 2px;
+  }
+  .studia,
+  .portfolio {
+    color: #2196f3;
+  }
+  /* почта,телефон */
 }
 
-.auth__list .auth__item:last-child {
-  margin-right: 0px;
+@media screen and (min-width: 767px) and (min-width: 768px) and (max-width: 1199px) {
+  .auth__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
-.auth__tel,
-.auth__mail {
-  color: #757575;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: color var(--duration) var(--timing-function);
-  transition: color var(--duration) var(--timing-function);
+@media screen and (min-width: 767px) {
+  .auth__tel,
+  .auth__mail {
+    color: #757575;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: color var(--duration) var(--timing-function);
+    transition: color var(--duration) var(--timing-function);
+  }
+  .auth__tel:hover, .auth__tel:focus, .auth__tel:focus, .auth__tel:hover,
+  .auth__mail:hover,
+  .auth__mail:focus,
+  .auth__mail:focus,
+  .auth__mail:hover {
+    color: var(--selectoin-color);
+  }
+  .auth__icon,
+  .auth__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
 }
 
-.auth__tel:hover, .auth__tel:focus, .auth__tel:focus, .auth__tel:hover,
-.auth__mail:hover,
-.auth__mail:focus,
-.auth__mail:focus,
-.auth__mail:hover {
-  color: var(--selectoin-color);
-}
-
-.auth__icon,
-.auth__icon {
-  margin-right: 10px;
-  fill: currentColor;
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+  }
+  .auth__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .auth__list .auth__item {
+    margin-right: 50px;
+  }
+  .auth__list .auth__item:last-child {
+    margin-right: 0px;
+  }
+  .nav__link.current::after {
+    position: absolute;
+    bottom: -32px;
+    right: 0;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: #2196f3;
+    border-radius: 2px;
+  }
 }
 
 /*#endregion HEADER*/
