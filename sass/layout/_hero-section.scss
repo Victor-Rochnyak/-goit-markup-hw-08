@@ -1,5 +1,14 @@
 /*#region HERO SECTION*/
 
+@media screen and(max-width:1199px) {
+  .hero-section{
+    padding:118px 0px;}
+
+    .hero-title{
+      max-width: 360px;
+    }
+}
+
 .hero-section {
   background: var(--footer-heder-color);
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
