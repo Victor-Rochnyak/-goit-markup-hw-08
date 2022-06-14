@@ -22,8 +22,6 @@
 .logo {
   color: var(--selectoin-color);
 
-  // margin-right: 94px;
-
   text-decoration: none;
   font-family: 'Raleway';
   font-weight: 700;
@@ -146,7 +144,7 @@
 
 @media screen and(min-width:1200px) {
   .logo {
-    margin-right: 93px;
+    margin-right: 94px;
   }
   .auth__list {
     display: flex;

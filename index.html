@@ -1,145 +1,142 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Студия</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Студия</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css/main.min.css" />
-</head>
+  <body>
+    <!-- Navigation header -->
 
-<body>
-  <!-- Navigation header -->
-
-  <header class="header-section">
-    <div class="conteiner header__conteiner">
-      <a class="logo logo--header" href="index.html" lang="en">
-        Web<span class="logo__web">Studio</span></a>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link current studia" href="./index.html">Студия</a>
+    <header class="header-section">
+      <div class="conteiner header__conteiner">
+        <a class="logo logo--header" href="index.html" lang="en">
+          Web<span class="logo__web">Studio</span></a
+        >
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link current studia" href="./index.html">Студия</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="auth__list">
+          <li class="auth__item">
+            <a class="auth__mail" href="mailto:info@devstudio.com">
+              <svg class="auth__icon" width="16" height="12">
+                <use href="./images/sprite.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="">Контакты</a>
+          <li class="auth__item">
+            <a class="auth__tel" href="tel:+380961111111">
+              <svg class="auth__icon" width="10" height="16">
+                <use href="./images/sprite.svg#icon-Vector"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
           </li>
         </ul>
-      </nav>
-      <ul class="auth__list ">
-        <li class="auth__item">
-          <a class="auth__mail" href="mailto:info@devstudio.com">
-            <svg class="auth__icon" width="16" height="12">
-              <use href="./images/sprite.svg#icon-envelope"></use>
-            </svg>
-            info@devstudio.com
-          </a>
-        </li>
-        <li class="auth__item">
-          <a class="auth__tel" href="tel:+380961111111">
-            <svg class="auth__icon" width="10" height="16">
-              <use href="./images/sprite.svg#icon-Vector"></use>
-            </svg>
-            +38 096 111 11 11
-          </a>
-        </li>
-      </ul>
-      <!-- кнопка открытия мобайл меню -->
-      <button class="mobile-button__burger " type="button" data-menu-open>
-        <svg class="mobile-button__icon" width="40" height="40">
-          <use href="./images/sprite-burger.svg#icon-menu_burger"></use>
-        </svg>
-      </button>
-    </div>
+        <!-- кнопка открытия мобайл меню -->
+        <button class="mobile-button__burger" type="button" data-menu-open>
+          <svg class="mobile-button__icon" width="40" height="40">
+            <use href="./images/sprite-burger.svg#icon-menu_burger"></use>
+          </svg>
+        </button>
+      </div>
       <!-- мобайл меню и кнопка закрытия мобайл меню -->
-    <div class="mobile-menu " data-menu>
-      <button class="mobile-menu__close" type="button" data-menu-close>
-        <svg class="mobile-menu__icon data-menu-close" width="40" height="40">
-          <use href="./images/sprite-burger.svg#icon-close_burger"></use>
-        </svg>
-      </button>
-      <!-- мобильная навигация -->
-      <nav class="mobile-nav">
-        <ul class="mobile-nav__list">
-          <li class="mobile-nav__item">
-            <a class="mobile-nav__link" href="index.html">Студия</a>
-          </li>
-          <li class="mobile-nav__item">
-            <a class="mobile-nav__link" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li class="mobile-nav__item">
-            <a class="mobile-nav__link" href="./contacts.html">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <address class="mobile-auth">
-        <ul class="mobile-auth__item">
-          <li class="mobile-auth__list">
-            <a class="mobile-auth__tel" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-          <li class="mobile-auth__list">
-            <a class="mobile-auth__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-        </ul>
-      </address>
-      <address class="mobile-social">
-        <ul class="mobile-social__item">
-          <li class="mobile-social__list">
-            <a class="mobile-social__link" href="https://www.instagram.com/">
-              Instagram
-            </a>
-          </li>
-          <li class="mobile-social__list">
-            <a class="mobile-social__link" href="https://twitter.com/">
-              Twitter
-            </a>
-          </li>
-          <li class="mobile-social__list">
-            <a class="mobile-social__link" href="https://www.facebook.com/">
-              Facebook
-            </a>
-          </li>
-          <li class="mobile-social__list">
-            <a class="mobile-social__link" href="https://www.linkedin.com/">
-              Linkedin
-            </a>
-          </li>
-        </ul>
-      </address>
-    </div>
-  </header>
+      <div class="mobile-menu" data-menu>
+        <button class="mobile-menu__close" type="button" data-menu-close>
+          <svg class="mobile-menu__icon data-menu-close" width="40" height="40">
+            <use href="./images/sprite-burger.svg#icon-close_burger"></use>
+          </svg>
+        </button>
+        <!-- мобильная навигация -->
+        <nav class="mobile-nav">
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="index.html">Студия</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="./contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="mobile-auth">
+          <ul class="mobile-auth__item">
+            <li class="mobile-auth__list">
+              <a class="mobile-auth__tel" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-auth__list">
+              <a class="mobile-auth__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+        </address>
+        <address class="mobile-social">
+          <ul class="mobile-social__item">
+            <li class="mobile-social__list">
+              <a class="mobile-social__link" href="https://www.instagram.com/"> Instagram </a>
+            </li>
+            <li class="mobile-social__list">
+              <a class="mobile-social__link" href="https://twitter.com/"> Twitter </a>
+            </li>
+            <li class="mobile-social__list">
+              <a class="mobile-social__link" href="https://www.facebook.com/"> Facebook </a>
+            </li>
+            <li class="mobile-social__list">
+              <a class="mobile-social__link" href="https://www.linkedin.com/"> Linkedin </a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
 
-  <main>
-    <!-- hero section -->
-    <section class="hero-section section">
+    <main>
+      <!-- hero section -->
+      <section class="hero-section section">
         <div class="conteiner">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button class="hero-btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
 
-    <!-- модальное окно -->
-    <div class="backdrop is-hidden" data-modal>
-          <div class="modal-wrapper"> 
-
-   <!-- форма -->
+        <!-- модальное окно -->
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal-wrapper">
+            <!-- форма -->
             <form class="modal-form" name="hero-form">
-              <b class="modal-form__title">Оставьте свои данные, мы вам перезвоним</b> 
+              <b class="modal-form__title">Оставьте свои данные, мы вам перезвоним</b>
 
-    <!-- Данные пользователя -->
-    <label class="modal-form__lable">
+              <!-- Данные пользователя -->
+              <label class="modal-form__lable">
                 <span class="modal-form__span">Имя</span>
                 <input class="modal-form__input" type="text" name="user-name" />
 
@@ -165,8 +162,8 @@
                 </svg>
               </label>
 
-    <!-- коментарий -->
-    <label class="modal-form__coments">
+              <!-- коментарий -->
+              <label class="modal-form__coments">
                 <span class="modal-form__span">Комментарий</span>
                 <textarea
                   class="modal-form__textarea"
@@ -177,8 +174,8 @@
                 ></textarea>
               </label>
 
-    <!-- политика конфидициальности -->
-    <label class="modal-form__policy">
+              <!-- политика конфидициальности -->
+              <label class="modal-form__policy">
                 <input class="modal-form__check-box" type="checkbox" />
                 <span class="modal-form__custom-checkbox"> </span>
                 <span class="modal-form__policy-desc"
@@ -187,8 +184,8 @@
                 </span>
               </label>
 
-    <!-- кнопка отправки -->
-    <button class="modal-button" type="submit">Отправить</button>
+              <!-- кнопка отправки -->
+              <button class="modal-button" type="submit">Отправить</button>
             </form>
             <button class="modal-button__close" data-modal-close>
               <svg class="modal-button__icon" width="11" height="11">
@@ -199,8 +196,8 @@
         </div>
       </section>
 
-    <!-- specifics section -->
-    <!-- <section class="specifics-section section">
+      <!-- specifics section -->
+      <section class="specifics-section section">
         <div class="conteiner">
           <h2 class="visually-hidden">Наши особенности</h2>
           <ul class="specifics-list">
@@ -230,10 +227,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-    <!-- development section -->
-    <!-- <section class="development-section section">
+      <!-- development section -->
+      <!-- <section class="development-section section">
         <div class="development conteiner">
           <h2 class="devefelopment__title">Чем мы занимаемся</h2>
           <ul class="development__list">
@@ -273,8 +270,8 @@
           </ul>
         </div>
       </section> -->
-    <!-- Team -->
-    <!-- <section class="team-section section">
+      <!-- Team -->
+      <section class="team-section section">
         <div class="team conteiner">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
@@ -428,9 +425,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
-    <!-- Regular customers -->
-    <!-- <section class="client-customers section">
+      </section>
+      <!-- Regular customers -->
+      <section class="client-customers section">
         <div class="client conteiner">
           <h2 class="client__title">Постоянные клиенты</h2>
           <ul class="client__list">
@@ -479,9 +476,9 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
     <!--footer site  -->
-    <!-- <footer class="footer-site">
+    <footer class="footer-site">
       <div class="conteiner footer-section">
         <div class="footer-left">
           <a href="index.html" class="logo footer__logo" lang="en">
@@ -498,9 +495,9 @@
               </li>
             </ul>
           </address>
-        </div> -->
-    <!-- футер соц-сети -->
-    <!-- <div class="footer-messenger">
+        </div>
+        <!-- футер соц-сети -->
+        <div class="footer-messenger">
           <h2 class="footer-messenger__join">Присоединяйтесь</h2>
           <ul class="footer-social">
             <li class="footer-social__item">
@@ -532,9 +529,9 @@
               </a>
             </li>
           </ul>
-        </div> -->
-    <!-- футер форма -->
-    <!-- <form class="footer-form-group" name="footer-form">
+        </div>
+        <!-- футер форма -->
+        <form class="footer-form-group" name="footer-form">
           <div class="footer-group">
             <p class="footer-group__text">Подпишитесь на рассылку</p>
             <label>
@@ -544,10 +541,9 @@
           </div>
         </form>
       </div>
-    </footer> -->
+    </footer>
 
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
-</body>
-
+  </body>
 </html>

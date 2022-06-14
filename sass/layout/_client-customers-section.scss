@@ -8,18 +8,31 @@
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
-}
 
-.client__list {
-  display: flex;
-
-  .client__logo:not(:last-child) {
-    margin-right: 30px;
+  @media screen and(max-width:1199.98px) {
+    font-size: 28px;
+    margin-bottom: 30px;
   }
 }
 
+// .client__list {
+//   display: flex;
+
+//   .client__logo:not(:last-child) {
+//     margin-right: 30px;
+//   }
+// }
+@media screen and(max-width:767.98px) {
+  .client__list{
+grid-template-columns: 1fr 1fr;
+display: grid;
+grid-gap:30px
+  }
+  
+}
+
 .client__link {
-  width: 170px;
+  // width: 170px;
   height: 92px;
   display: flex;
   justify-content: center;
