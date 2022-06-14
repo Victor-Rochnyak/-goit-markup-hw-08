@@ -10,9 +10,8 @@
 
 .footer__logo {
   display: block;
-
+  margin-right: 0px;
   margin-bottom: 20px;
-  margin-right: 0;
 
   .footer__web {
     color: #ffffff;
@@ -91,13 +90,30 @@
     margin-bottom: 8px;
   }
 
-    .footer-group__mail{
-      margin-bottom: 20px;
-      width: 100%;
-    }
+  .footer-group__mail {
+    margin-bottom: 20px;
+    width: 100%;
+  }
 }
 
 @media screen and(min-width:768px) and(max-width:1199.95px) {
+  .footer-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+  .footer-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+    .address-footer {
+      margin-bottom: 60px;
+    }
+        .footer-group__mail{
+          margin-bottom:  20px;
+        }
 }
 
 @media screen and(min-width:1200px) {

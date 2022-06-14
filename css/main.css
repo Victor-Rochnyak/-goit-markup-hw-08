@@ -1154,8 +1154,8 @@ img {
 
 .footer__logo {
   display: block;
+  margin-right: 0px;
   margin-bottom: 20px;
-  margin-right: 0;
 }
 
 .footer__logo .footer__web {
@@ -1260,6 +1260,39 @@ img {
   .footer-group__mail {
     margin-bottom: 20px;
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.95px) {
+  .footer-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .footer-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .address-footer {
+    margin-bottom: 60px;
+  }
+  .footer-group__mail {
+    margin-bottom: 20px;
   }
 }
 
