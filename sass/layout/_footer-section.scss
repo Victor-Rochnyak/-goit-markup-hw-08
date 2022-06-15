@@ -102,18 +102,19 @@
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-around;
+    text-align: center;
   }
   .footer-group {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-    .address-footer {
-      margin-bottom: 60px;
-    }
-        .footer-group__mail{
-          margin-bottom:  20px;
-        }
+  .address-footer {
+    margin-bottom: 60px;
+  }
+  .footer-group__mail {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and(min-width:1200px) {

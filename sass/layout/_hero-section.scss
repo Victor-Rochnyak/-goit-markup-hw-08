@@ -1,19 +1,19 @@
 /*#region HERO SECTION*/
 
 @media screen and(max-width:1199px) {
-  .hero-section{
-    padding:118px 0px;}
+  .hero-section {
+    padding: 118px 0px;
+  }
 
-    .hero-title{
-      max-width: 360px;
-      font-size: 26px;
-    }
+  .hero-title {
+    max-width: 360px;
+    font-size: 26px;
+  }
 }
 
 .hero-section {
   background: var(--footer-heder-color);
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/Img.jpg);
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img.jpg);
 
   text-align: center;
   max-width: 1600px;
@@ -26,15 +26,13 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  
 }
 
 .hero-title {
   color: #ffffff;
 
   font-weight: 900;
-  // font-size: 44px;
+  font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
