@@ -1,22 +1,60 @@
 /*#region HERO SECTION*/
 
 .hero-section {
-  background: var(--footer-heder-color);
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img.jpg);
-
-  text-align: center;
   max-width: 1600px;
-  margin-right: auto;
-  margin-left: auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  margin-right: auto;
-  margin-left: auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
+  text-align: center;
 
+  // фоновое изображение для мобайл
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('/images/hero.jpg/Header480-mobile.jpg');
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    -webkit-image-set(url('/images/hero.jpg/Header480-mobile.webp') 1x);
+
+  // загрузка ретинизованого фонового изображения для мобайл
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('/images/hero.jpg/Header480@2x-mobile.jpg');
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      -webkit-image-set(url('/images/hero.jpg/Header480@2x-mobile.webp') 2x);
+  }
+
+  // фоновое изображение для таблет
+  @media screen and(min-width:768px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('/images/hero.jpg/Header768-tablet.jpg');
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      -webkit-image-set(url('/images/hero.jpg/Header768-tablet.webp') 1x);
+  }
+  // загрузка ретизинованого фонового изображения для таблет
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('/images/hero.jpg/Header768@2x-tablet.jpg');
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      -webkit-image-set(url('/images/hero.jpg/Header768@2x-tablet.webp') 2x);
+  }
+  
+  // фоновое изображение для desktop
+  @media screen and(min-width:1200px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('/images/hero.jpg/Hero1600-desktop.jpg');
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      -webkit-image-set(url('/images/hero.jpg/Hero1600-desktop.webp') 1x);
+  }
+  // загрузка ретизинованого фонового изображения для desctop
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('/images/hero.jpg/Hero1600@2x-desktop.jpg');
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      -webkit-image-set(url('/images/hero.jpg/Hero1600@2x-desktop.webp') 2x);
+  }
+
+}
 .hero-title {
   color: #ffffff;
 

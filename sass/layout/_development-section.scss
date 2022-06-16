@@ -43,4 +43,16 @@
     }
 }
 
+@media screen and(max-width:1199.98px) {
+    .development-section{
+        display: none;
+    }
+}
+
+@media screen and(min-width:1200px) {
+    .development-section {
+        padding-top: 0px;
+    }
+}
+
 /*#endregion DEVELOPMENT SECTION*/
