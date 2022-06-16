@@ -240,15 +240,15 @@ img {
   transition: transform var(--duration) var(--timing-function), -webkit-transform var(--duration) var(--timing-function);
 }
 
-@media screen and (min-width: 320px) and (max-width: 767.98px) {
+@media screen and (min-width: 480px) and (max-width: 1199.98px) {
   .modal-wrapper {
-    width: 390px;
+    width: 450px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+@media screen and (max-width: 480px) {
   .modal-wrapper {
-    width: 450px;
+    width: 95%;
   }
 }
 
@@ -421,6 +421,12 @@ img {
   color: #757575;
 }
 
+@media screen and (max-width: 480px) {
+  .modal-form__policy-desc {
+    font-size: 10px;
+  }
+}
+
 @media screen and (min-width: 320px) and (max-width: 1199.98px) {
   .modal-form__policy {
     margin-left: 0px;
@@ -465,13 +471,7 @@ img {
   color: #2196f3;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767.98px) {
-  .modal-form__policy-desc {
-    font-size: 10px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+@media screen and (min-width: 480px) and (max-width: 1199.98px) {
   .modal-form__policy-desc {
     font-size: 12px;
   }
@@ -607,19 +607,33 @@ img {
 }
 
 /*#endregion FOOTER_social-icons*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .mobile-menu {
-    padding: 48px 40px;
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 48px 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    z-index: 100;
     overflow: auto;
     background-color: #ffffff;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 250ms ease-in-out;
+    transition: -webkit-transform 250ms ease-in-out;
+    transition: transform 250ms ease-in-out;
+    transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    width: 100%;
-    height: 100%;
   }
   .mobile-menu__close {
     position: absolute;
@@ -634,15 +648,14 @@ img {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   .mobile-menu__icon:hover,
   .mobile-menu :focus {
     fill: #2196f3;
   }
-  .mobile-nav {
-    margin-bottom: 302px;
-  }
-  .mobile-nav__item {
+  .mobile-nav__item:not(:last-child) {
     margin-bottom: 32px;
   }
   .mobile-nav__link {
@@ -654,7 +667,7 @@ img {
     text-decoration: none;
   }
   .mobile-nav__link:hover,
-  .mobile-nav :focus {
+  :focus {
     color: #2196f3;
   }
   .mobile-button__burger {
@@ -667,13 +680,13 @@ img {
   .mobile-button__burger :focus {
     fill: #2196f3;
   }
-  .mobile-auth {
+  .mobile-contacts__item {
     margin-bottom: 64px;
   }
-  .mobile-auth__list {
+  .mobile-contacts__list:not(:last-child) {
     margin-bottom: 32px;
   }
-  .mobile-auth__tel {
+  .mobile-contacts__tel {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -683,7 +696,7 @@ img {
     text-decoration: none;
     color: #2196f3;
   }
-  .mobile-auth__mail {
+  .mobile-contacts__mail {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -721,6 +734,10 @@ img {
     text-decoration: none;
     color: #2196f3;
   }
+}
+
+.mobile-contacts__item {
+  margin-top: auto;
 }
 
 @media screen and (min-width: 767px) {
@@ -1457,7 +1474,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 101%;
   padding: 63px 24px;
   font-weight: 400;
   font-size: 18px;
@@ -1487,7 +1504,7 @@ img {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
   margin-bottom: 4px;
 }
 
@@ -1567,6 +1584,12 @@ img {
   }
   .projects__item {
     cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .filter-list__item:not(:last-child) {
+    margin-right: 5px;
   }
 }
 
